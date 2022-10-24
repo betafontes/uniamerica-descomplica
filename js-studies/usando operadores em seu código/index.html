@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Integradora Desenvolvimento de Software com JavaScript</title>
+</head>
+   
+<script>
+    function verifica() {
+        var valor1 = document.getElementById("valor1");
+        var valor2 = document.getElementById("valor2");
+
+        var soma = valor1.value + valor2.value;
+        console.log(soma);
+
+        if (soma > 10) {
+            texto.innerHTML = "Valor maior que 10";
+        }
+    }
+</script>
+
+<body>
+    Valor 1: <input type="text" id="valor1" />
+    <br />
+    Valor 2:<input type="text" id="valor2" />
+    <br />
+        
+    <button onclick="verifica()">Verifica</button>
+     <div id="texto"></div>
+</body>
+</html>
